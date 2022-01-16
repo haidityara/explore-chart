@@ -3,7 +3,6 @@ import {
     ResponsiveContainer,
     AreaChart,
     XAxis,
-    YAxis,
     Area,
     Tooltip,
     BarChart,
@@ -11,7 +10,6 @@ import {
     Rectangle
 } from "recharts";
 import {useState} from "react";
-import {logDOM} from "@testing-library/react";
 
 const data = [];
 for (let num = 31; num >= 0; num--) {
