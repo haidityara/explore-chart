@@ -1,0 +1,108 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 14px;
+    background: #313e4c;
+    padding: 1rem;
+}
+
+pre{
+    color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0 0 0.5rem 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.cst-tooltip {
+    width: 400px;
+    color: #fff;
+    background-color: rgb(23, 27, 47);
+    text-align: left;
+}
+
+/* hiding first and last lines in cartesian grid */
+.recharts-wrapper .recharts-cartesian-grid-horizontal line:first-child,
+.recharts-wrapper .recharts-cartesian-grid-horizontal line:last-child {
+    stroke-opacity: 0;
+}
+
+.card-dark{
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    min-height: 332px;
+    border-radius: 16px;
+    width: 100%;
+    height: 380px;
+    padding: 1rem 2rem 1rem 1rem;
+    display: flex;
+    background-color: rgb(23, 27, 47);
+    flex-direction: column;
+}
+
+.price-group{
+    color: white;
+}
+
+.price-card-title{
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    font-weight: 600;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+}
+.price-card-sub-title{
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(108, 114, 132);
+}
+.radiant {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    pointer-events: none;
+    height: 200vh;
+    mix-blend-mode: color;
+    background: radial-gradient(50% 50% at 50% 50%, rgb(41, 185, 147) 0%, rgba(255, 255, 255, 0) 100%);
+    transform: translateY(-150vh);
+    max-width: 100vw !important;
+}
+
+.footer{
+    position: absolute;
+    bottom: 120px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 3em;
+}
