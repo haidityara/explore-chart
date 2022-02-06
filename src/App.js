@@ -10,6 +10,8 @@ import {
     Rectangle
 } from "recharts";
 import {useState} from "react";
+import ChartExplore from "./component/chart-explore";
+import BarAxs from "./component/bar-axs";
 
 const data = [];
 for (let num = 31; num >= 0; num--) {
@@ -46,7 +48,7 @@ function App() {
             <div className="radiant"></div>
             <div className="container">
                 <div className="row">
-                    <div className="area col-md-6">
+                    <div className="area col-md-6 mb-4">
                         <div className="card-dark">
                             <div className="d-flex price-group flex-column mb-5">
                                 <span className="price-card-sub-title">TVL</span>
@@ -89,7 +91,7 @@ function App() {
                             </ResponsiveContainer>
                         </div>
                     </div>
-                    <div className="area col-md-6">
+                    <div className="area col-md-6 mb-4">
                         <div className="card-dark">
                             <div className="d-flex price-group flex-column mb-5">
                                 <span className="price-card-sub-title">Volume</span>
@@ -126,10 +128,12 @@ function App() {
                             </ResponsiveContainer>
                         </div>
                     </div>
+                {/*  new component here  */}
+                    <ChartExplore/>
+                    <BarAxs/>
+                {/*  ./new component here  */}
+
                 </div>
-            </div>
-            <div className="footer">
-                TEAM TOKEN
             </div>
         </div>
     );
